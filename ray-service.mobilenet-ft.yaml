@@ -9,7 +9,7 @@ data:
     port 6379
     bind 0.0.0.0
     protected-mode no
-    requirepass changeme123
+    requirepass abcdefg123
 ---
 apiVersion: v1
 kind: Service
@@ -86,7 +86,7 @@ spec:
       # See https://docs.ray.io/en/latest/cluster/cli.html#ray-start for all available options in `rayStartParams`.
       rayStartParams:
         dashboard-host: '0.0.0.0'
-        redis-password: changeme123
+        redis-password: abcdefg123
       #pod template
       template:
         spec:
